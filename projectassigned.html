@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assigned project</title>
+
+     <!-- exporting poppins from google fonts-->
+
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+     <style>
+        body{
+           background: #E5E5E5;
+           font-family: 'Poppins';
+           font-style: normal;
+       }
+   
+       .main_container {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           padding: 1rem 0;
+           box-sizing: border-box;
+       }
+   
+       @media (max-width: 900px) {
+           .main_container{
+               padding: 0;
+           }
+       }
+   
+       .message_template{
+           width: 50vw;
+           background: #FFFFFF;
+           border-radius: 10px;
+       }
+   
+       @media (max-width: 900px) {
+           .message_template{
+               width: 85vw;
+           }
+       }
+       .bell_icon, .project-assigned-message, .section2, .view-project, .last-text{
+           padding: 35px 35px 0 35px;
+           margin: 0;
+       }
+   
+       @media (max-width: 900px) {
+           .bell_icon, .project-assigned-message, .section2, .view-project, .last-text{
+           padding: 25px 25px 0 25px;
+       }
+       }
+   
+       .project-assigned-message{
+           font-weight: 400;
+           font-size: 24px;
+           line-height: 36px;
+           color: #162A62;
+       }
+   
+       .section2, .treeleaf-tech, .last-text{
+           font-weight: 400;
+           font-size: 16px;
+           line-height: 24px;
+           color: #333333;
+       }
+   
+       .view-project{
+           display: flex;
+           justify-content: space-between; 
+       }
+   
+       .view-button{
+           height: 36px;
+           width: 88px;
+           background: #376AF5;
+           cursor: pointer;
+           border-radius: 2px;
+           border: none;
+           color: #FFFFFF;
+           font-weight: 500;
+           font-size: 14px;
+           line-height: 21px;
+       }
+   
+       .view-button:hover{
+           box-shadow: 0px 3px 4px 1px rgba(55, 106, 245, 0.1);
+       }
+       .last-text{
+           color: #376AF5;
+       }
+       .footer{
+           width: 100%;
+           height: 48px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           background: #5F88F7;
+           border-radius: 10px 10px 0px 0px;
+           transform: rotate(-180deg);
+           margin-top: 35px;
+       }
+   
+       @media (max-width: 700px) {
+           .footer{
+              height: 30px;
+           }
+       }
+       .footer-text{
+           transform: rotate(180deg);
+           font-weight: 400;
+           font-size: 13px;
+           line-height: 16px;
+           text-align: center;
+           color: #FFFFFF;
+       }
+   
+   
+       span{
+       padding:5px ; 
+       }
+   
+       .dot-text{
+       text-decoration: underline;
+       }
+   
+   </style>
+</head>
+
+<body>
+
+     <!--This is the main message container that consists of logo and message-->
+    <div class="main_container">
+
+         <!--This is the logo-->
+        <img src="./images/Group 10365.svg" alt=""/><br>
+
+        <!--This is the message template-->
+        <div class="message_template">
+
+            <!--notiication icon and message-->
+              <img src="./images/Group 10453.svg"  class="bell_icon" alt="" />
+              <p class="project-assigned-message">
+                  You have been assigned to a project ! 
+              </p>
+              <br>
+              <hr style="border: 0.2px solid #9C9C9C;">
+
+
+              <!--this is the main section-->
+              <div class="section2">
+                <p style="margin: 0;">Hi Jasmine,</p>
+                <p>Avishek Pathak has assigned a project to you.</p>
+              </div>
+
+
+              <div class="view-project">
+                    <div style="display: flex;">
+                        <img src="./images/Rectangle 821@2x.svg" alt="" />
+                        <div class="treeleaf-tech">
+                            <p style="margin: 0; padding-left: 10px;">Treeleaf Technologies</p>
+                            <p style="margin: 0; padding-left: 10px;">Software</p>
+                        </div>
+                    </div>
+                    <button class="view-button">
+                            View
+                    </button>
+                    
+              </div>
+
+              <p class="last-text">View all your ongoing projects.</p>
+
+              
+             <!--this is the footer section-->
+             <footer class="footer">
+                <div class="footer-text">
+                © 2021 Anydone 
+                <span style="vertical-align: middle;">
+                    <img src="./images/Ellipse 362.svg" alt="" />
+                </span>
+                <span class="dot-text">
+                    Our Blog 
+                </span>
+               
+                <span>
+                    <img src="../images/Ellipse 362.svg" alt="" />
+                </span>
+                <span class="dot-text">
+                    Privacy Policies
+                </span>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
+
